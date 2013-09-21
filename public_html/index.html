@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+html,
+body,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    cursor: -moz-zoom-in;
+    cursor: -webkit-zoom-in;
+    cursor: url(zoom-in.cur) 6 6, zoom-in;
+    float: left;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.zoom {
+    cursor: -moz-zoom-out;
+    cursor: -webkit-zoom-out;
+    cursor: url(zoom-out.cur) 6 6, zoom-out;
+    max-height: initial;
+    max-width: initial;
+}
+
+</style>
+</head>
+<body>
+<img src="01.jpg" onclick="this.className=this.className.match(/zoom/)?'':'zoom'">
+</body>
+</html>
