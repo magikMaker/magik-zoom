@@ -4,8 +4,8 @@
 <style>
 
 html,
-body,
-img {
+body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -15,16 +15,18 @@ img {
     cursor: -webkit-zoom-in;
     cursor: url(zoom-in.cur) 6 6, zoom-in;
     float: left;
+    margin: 0;
     max-height: 100%;
     max-width: 100%;
+    padding: 0;
 }
 
 .zoom {
     cursor: -moz-zoom-out;
     cursor: -webkit-zoom-out;
     cursor: url(zoom-out.cur) 6 6, zoom-out;
-    max-height: initial;
-    max-width: initial;
+    max-height: none;
+    max-width: none;
 }
 
 </style>
